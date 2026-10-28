@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#24112e">
+<title>For Muskan 💖 | Midnight Birthday Surprise</title>
+<style>
+:root{--pink:#ff9fce;--rose:#ffd0e7;--gold:#ffe4a3;--ink:#fff7fc;--muted:#f0d7e9;--panel:rgba(255,255,255,.085);--line:rgba(255,255,255,.18)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:radial-gradient(ellipse at 50% -10%,#743b78 0,#321a43 38%,#120b20 78%);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.25;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:47px 47px;z-index:0}
+button,a{font:inherit}
+button{cursor:pointer}
+a{color:inherit}
+.topbar,main,footer{position:relative;z-index:1}
+.topbar{position:sticky;top:0;z-index:5;display:flex;justify-content:center;gap:7px;flex-wrap:wrap;padding:12px;background:rgba(18,8,30,.78);backdrop-filter:blur(14px);border-bottom:1px solid #ffffff18}
+.nav{border:1px solid transparent;color:#fbe8f5;text-decoration:none;padding:9px 13px;border-radius:999px;font-size:.9rem}
+.nav:hover,.nav:focus{background:#ffffff14;border-color:#ffffff30}
+main{width:min(900px,92%);margin:auto}
+section{padding:44px 0;scroll-margin-top:78px}
+.hero{text-align:center;padding-top:48px}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line);background:#ffffff0c;border-radius:999px;padding:8px 14px;color:#ffe3f3;font-size:.9rem}
+h1{font-size:clamp(2.5rem,8vw,5.5rem);line-height:1.02;letter-spacing:-.04em;margin:22px 0 16px;background:linear-gradient(100deg,#fff,#ffc1e0 55%,#ffe6a3);-webkit-background-clip:text;background-clip:text;color:transparent}
+h2{font-size:clamp(1.7rem,5vw,2.6rem);margin:0 0 12px}
+h3{margin:0 0 8px}
+.sub{max-width:650px;margin:0 auto;color:var(--muted);line-height:1.8;font-size:1.04rem}
+.panel{border:1px solid var(--line);background:var(--panel);border-radius:28px;padding:clamp(20px,5vw,36px);box-shadow:0 22px 70px #0003;backdrop-filter:blur(12px)}
+.count-card{margin:32px auto 0;max-width:700px;text-align:center}
+.cake{font-size:4.5rem;filter:drop-shadow(0 0 20px #ff9fce);animation:bob 2.4s ease-in-out infinite}
+.timer{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:22px 0}
+.time{min-width:86px;padding:14px 12px;border-radius:17px;background:#ffffff12;border:1px solid #ffffff1d}
+.time b{display:block;font-size:2rem;color:var(--gold);font-variant-numeric:tabular-nums}
+.time span{font-size:.72rem;letter-spacing:.12em;color:#f2d9ea}
+.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;border:0;border-radius:999px;padding:13px 20px;font-weight:750;color:#35152f;background:linear-gradient(100deg,#ff9fce,#ffe5a1);box-shadow:0 8px 25px #ff9fce25;text-decoration:none}
+.btn.secondary{background:#ffffff13;color:white;border:1px solid var(--line);box-shadow:none}
+.btnrow{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+.small{font-size:.86rem;color:#dfc4dc;line-height:1.65}
+.section-head{text-align:center;margin-bottom:22px}
+.section-head p{color:var(--muted);line-height:1.7}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.photo-card{min-height:220px;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:linear-gradient(145deg,#68375f,#302045 65%,#20132f);position:relative;display:flex;align-items:center;justify-content:center;text-align:center}
+.photo-card img{width:100%;height:100%;min-height:220px;object-fit:cover;position:absolute;inset:0}
+.photo-placeholder{padding:18px;position:relative;z-index:1;text-shadow:0 2px 8px #0008}
+.photo-placeholder .emoji{font-size:2.7rem;display:block;margin-bottom:8px}
+.photo-card.has-image .photo-placeholder{display:none}
+.caption{position:absolute;bottom:0;left:0;right:0;padding:11px;background:linear-gradient(transparent,#100716d9);font-size:.9rem;z-index:2}
+.letter{max-width:720px;margin:auto;line-height:1.95;color:#fff0fa;white-space:pre-line}
+.letter h2{text-align:center;color:#ffd1e9}
+.letter .sign{text-align:center;color:var(--gold);font-weight:700}
+.wishes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.wish{border:1px solid var(--line);background:#ffffff0b;border-radius:18px;padding:18px;text-align:left;color:var(--ink)}
+.wish summary{cursor:pointer;font-weight:750;color:#ffd9ec;list-style:none}
+.wish summary::-webkit-details-marker{display:none}
+.wish summary:after{content:"＋";float:right;color:var(--gold)}
+.wish[open] summary:after{content:"−"}
+.wish p{line-height:1.75;color:var(--muted);margin-bottom:0}
+.music-status{font-size:.84rem;color:var(--muted);margin-top:10px}
+footer{text-align:center;padding:25px 12px 42px;color:#d7b9d9;font-size:.86rem}
+.heart{position:fixed;bottom:-35px;animation:float 8s linear forwards;pointer-events:none;z-index:8}
+.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);z-index:10;background:#24122e;border:1px solid #ffffff33;border-radius:14px;padding:12px 16px;box-shadow:0 8px 30px #0005;max-width:90%;display:none}
+@keyframes bob{50%{transform:translateY(-8px) rotate(2deg)}}
+@keyframes float{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+
+.cake-stage{margin:18px auto 8px;max-width:430px;min-height:235px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px}
+.cake-art{position:relative;width:220px;height:170px;display:none;align-items:flex-end;justify-content:center;cursor:pointer;user-select:none;outline:none}
+.cake-art.show{display:flex;animation:cakeIn .8s cubic-bezier(.2,.8,.2,1) both}
+.cake-base{position:absolute;bottom:10px;width:190px;height:74px;border-radius:18px 18px 25px 25px;background:linear-gradient(#ffb2d9 0 18%,#ff6eb5 19% 28%,#ffc4e2 29% 100%);box-shadow:0 14px 25px #0004,inset 0 -8px 0 #e65b9f}
+.cake-top{position:absolute;bottom:68px;width:190px;height:35px;border-radius:50%;background:#ffe2f1;border:4px solid #ff9fce;box-shadow:inset 0 -5px 0 #ffc1e0}
+.cake-drip{position:absolute;bottom:54px;width:190px;height:27px;background:linear-gradient(#ff9fce,#ff9fce);border-radius:0 0 18px 18px;clip-path:polygon(0 0,100% 0,100% 30%,90% 30%,86% 100%,76% 100%,72% 25%,58% 25%,54% 85%,43% 85%,40% 25%,25% 25%,20% 100%,10% 100%,8% 35%,0 35%)}
+.candle{position:absolute;bottom:100px;width:12px;height:43px;border-radius:5px;background:repeating-linear-gradient(135deg,#fff 0 6px,#ff78b9 6px 12px);box-shadow:0 0 8px #fff5}
+.candle:nth-child(2){transform:translateX(-35px) rotate(-5deg)}.candle:nth-child(3){transform:translateX(0)}.candle:nth-child(4){transform:translateX(35px) rotate(5deg)}
+.flame{position:absolute;bottom:141px;width:17px;height:24px;border-radius:60% 40% 60% 40%;background:radial-gradient(ellipse at 50% 70%,#fff9b0 0 22%,#ffb23f 45%,#ff668e 75%);filter:drop-shadow(0 0 9px #ffcf69);animation:flicker .45s infinite alternate}
+.flame.f1{transform:translateX(-35px)}.flame.f2{transform:translateX(0)}.flame.f3{transform:translateX(35px)}
+.knife{font-size:2.7rem;position:absolute;right:0;top:14px;display:none;transform:rotate(-25deg);filter:drop-shadow(0 4px 6px #0006);z-index:2}
+.cake-art.cutting .knife{display:block;animation:knifeCut 1s ease-in-out forwards}
+.cake-art.cut .cake-base{clip-path:polygon(0 0,47% 0,50% 20%,62% 48%,100% 100%,0 100%)}
+.cake-art.cut .cake-top{clip-path:polygon(0 0,48% 0,52% 20%,63% 48%,100% 100%,0 100%)}
+.cake-art.cut:after{content:"🍰";position:absolute;right:4px;bottom:7px;font-size:2.6rem;transform:rotate(12deg);animation:slicePop .8s ease-out both}
+.cake-message{display:none;font-size:clamp(1.7rem,6vw,2.7rem);font-weight:900;line-height:1.15;text-align:center;background:linear-gradient(90deg,#fff,#ffb6dc,#ffe8a4);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 0 22px #ff8ac755}
+.cake-message.show{display:block;animation:messageIn 1s ease both}
+.cake-hint{color:var(--muted);font-size:.9rem;min-height:1.5em}
+@keyframes cakeIn{from{opacity:0;transform:translateY(25px) scale(.75)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes flicker{to{transform:translateY(-3px) scale(.92);filter:drop-shadow(0 0 13px #ffcf69)}}
+@keyframes knifeCut{0%{transform:translate(0,-30px) rotate(-45deg)}55%{transform:translate(-72px,50px) rotate(25deg)}100%{transform:translate(-55px,75px) rotate(18deg);opacity:.1}}
+@keyframes slicePop{from{opacity:0;transform:translate(12px,10px) scale(.5)}to{opacity:1;transform:translate(0,0) scale(1)}}
+@keyframes messageIn{from{opacity:0;transform:scale(.6) translateY(15px)}to{opacity:1;transform:scale(1) translateY(0)}}
+
+
+#revealBtn{font-size:1.08rem;font-weight:900;letter-spacing:.01em;padding:16px 25px;border:2px solid #fff0f8;box-shadow:0 0 0 4px #ff9fce24,0 0 28px #ff85c9a8,0 10px 30px #0004;animation:btnGlow 1.8s ease-in-out infinite alternate}
+#revealBtn:hover{transform:translateY(-2px) scale(1.025)}
+@keyframes btnGlow{from{box-shadow:0 0 0 3px #ff9fce20,0 0 18px #ff85c970,0 10px 25px #0004}to{box-shadow:0 0 0 5px #ff9fce35,0 0 34px #ff85c9c9,0 12px 30px #0005}}
+
+@media(max-width:640px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.photo-card,.photo-card img{min-height:175px}.wishes{grid-template-columns:1fr}.nav{padding:8px 10px;font-size:.82rem}.time{min-width:75px}}
+</style>
+</head>
+<body>
+<nav class="topbar" aria-label="Birthday pages">
+<a class="nav" href="#home">🌙 Surprise</a><a class="nav" href="#gallery">📸 Gallery</a><a class="nav" href="#letter">💌 Letter</a><a class="nav" href="#wishes">✨ Wishes</a>
+<button class="nav" id="musicBtn" type="button">🎵 Play gentle music</button>
+</nav>
+<main>
+<section class="hero" id="home">
+<span class="eyebrow">A tiny surprise made just for you ✨</span>
+<h1>Happy Birthday,<br>Muskan 💖</h1>
+<p class="sub">Some people make ordinary days feel a little more special. Today is all about celebrating you. 🌙</p>
+<div class="panel count-card">
+<div class="cake" aria-hidden="true">🎂</div>
+<div class="cake-stage">
+  <button class="btn" id="showCakeBtn" type="button">Tap to reveal your cake 🎁</button>
+  <div class="cake-art" id="cakeArt" role="button" tabindex="0" aria-label="Tap cake to cut it">
+    <span class="knife" aria-hidden="true">🔪</span>
+    <span class="candle"></span><span class="candle"></span><span class="candle"></span>
+    <span class="flame f1"></span><span class="flame f2"></span><span class="flame f3"></span>
+    <div class="cake-base"></div><div class="cake-top"></div><div class="cake-drip"></div>
+  </div>
+  <div class="cake-message" id="cakeMessage">HAPPY BIRTHDAY<br>MUSKAN! 🎉💖</div>
+  <div class="cake-hint" id="cakeHint">First reveal the cake, then tap it to cut it. 💗</div>
+</div>
+<h2 id="headline">Your little midnight surprise</h2>
+<p class="sub" id="intro">Keep this page open and let the countdown reach zero.</p>
+<div class="timer" id="timer" aria-label="Countdown to birthday">
+<div class="time"><b id="dd">00</b><span>DAYS</span></div><div class="time"><b id="hh">00</b><span>HOURS</span></div><div class="time"><b id="mm">00</b><span>MINUTES</span></div><div class="time"><b id="ss">00</b><span>SECONDS</span></div>
+</div>
+<div class="btnrow"><button class="btn" id="revealBtn" type="button">💌 OPEN YOUR BIRTHDAY LETTER 💖</button></div>
+<p class="small" style="margin-top:18px">The countdown uses India Standard Time (IST). Keep this page open for the midnight reveal.</p>
+</div>
+</section>
+<section id="gallery">
+<div class="section-head"><span class="eyebrow">No photos needed — just heartfelt wishes 💗</span><h2>A Few Things I Wish for You 🌷</h2><p>Some wishes are better said from the heart.</p></div>
+<div class="wishes">
+<details class="wish" open><summary>Keep smiling, Muskan 😊</summary><p>I hope life gives you a thousand little reasons to smile, even on the days when things don't go as planned.</p></details>
+<details class="wish"><summary>Keep growing 🌱</summary><p>Keep learning, keep growing, and keep becoming the person you dream of being. I hope you achieve everything you quietly wish for.</p></details>
+<details class="wish"><summary>Choose your happiness 🦋</summary><p>May you always find the courage to choose what is right for you, the peace to let go of what hurts, and the strength to start again.</p></details>
+</div>
+</section>
+<section id="letter">
+<div class="panel letter">
+<h2>Dear Muskan, 💌</h2>
+<p>Muskan, sach bataun toh main soch raha tha ki main jaagta rahunga aur tujhe raat ke 12 baje sabse pehle wish karunga. 🥹❤️
+
+Par pata hi nahi chala kab neend aa gayi. Aur agar main jaag raha hota, toh pakka tujhe khud wish karta. Bas ye mat sochna ki mujhe yaad nahi tha — mujhe subah se yaad tha ki aaj tera birthday hai. 💗
+
+Happy Birthday, Muskan! 🎂✨
+
+Dil se chahta hoon ki tu hamesha khush rahe, apni life mein bahut aage badhe aur apne saare dreams poore kare. Life mein kitni bhi difficulties aayein, tu unka saamna himmat se kare aur kabhi khud par bharosa khona mat.
+
+Teri life mein achhe log aayein, tujhe har din kuch naya seekhne ko mile, aur tu apne aap par proud feel kare. Teri smile hamesha bani rahe, aur aane wala saal tere liye pichhle saal se bhi zyada beautiful ho. 🌷
+
+Aur haan, birthday sirf ek din ka hota hai, par main chahta hoon ki tu saal ke har din special feel kare. Apna khayal rakhna, khush rehna, grow karte rehna — aur apni wali smile kabhi mat khona. 🫶🏻💖
+
+Once again, happiest birthday to you, Muskan! 🎉🎂</p>
+<p class="sign">With lots of warmth and best wishes,<br>Someone who genuinely wants to see you happy 💗</p>
+<div class="btnrow"><button class="btn" id="heartBtn" type="button">Send a little sparkle ✨</button></div>
+</div>
+</section>
+<section id="wishes">
+<div class="section-head"><span class="eyebrow">Open a note whenever you need a smile ✨</span><h2>Little Wishes for You 💝</h2><p>Tap each note to open a little wish made just for you.</p></div>
+<div class="wishes">
+<details class="wish"><summary>When you need a smile 😊</summary><p>I hope something small and unexpected makes you smile today. You deserve happy little moments, not just on your birthday but all year long.</p></details>
+<details class="wish"><summary>A wish for your dreams 🌠</summary><p>May you find courage for the big dreams, patience for the slow days, and lovely surprises along the way. One step at a time—you've got this.</p></details>
+<details class="wish"><summary>A reminder for you 💗</summary><p>You don't have to be perfect to be wonderful. Just being yourself is already something worth celebrating.</p></details>
+<details class="wish"><summary>Your birthday wish 🎂</summary><p>Close your eyes, make your wish, and keep a little faith in all the beautiful things still waiting for you.</p></details>
+</div>
+</section>
+</main>
+<footer>Made with care, just for Muskan 💕<br>One little page, lots of warm wishes.</footer>
+<div class="toast" id="toast" role="status"></div>
+<script>
+/* Birthday midnight: 29 October 2026, India Standard Time. Update this ISO date if needed. */
+const target = new Date('2026-10-29T00:00:00+05:30').getTime();
+const $ = id => document.getElementById(id);
+function tick(){
+ const left=target-Date.now();
+ if(left<=0){
+  ['dd','hh','mm','ss'].forEach(id=>$(id).textContent='00');
+  $('headline').textContent='It’s your moment, Muskan! 🎉';
+  $('intro').textContent='Midnight is here — happy birthday! 💖';
+  $('revealBtn').textContent='Your birthday surprise is here! 💌';
+  document.title='Happy Birthday Muskan 💖';
+  return;
+ }
+ $('dd').textContent=String(Math.floor(left/86400000)).padStart(2,'0');
+ $('hh').textContent=String(Math.floor(left%86400000/3600000)).padStart(2,'0');
+ $('mm').textContent=String(Math.floor(left%3600000/60000)).padStart(2,'0');
+ $('ss').textContent=String(Math.floor(left%60000/1000)).padStart(2,'0');
+}
+
+let cakeStep=0;
+function revealCake(){
+ if(cakeStep!==0)return;
+ cakeStep=1;
+ $('cakeArt').classList.add('show');
+ $('showCakeBtn').style.display='none';
+ $('cakeHint').textContent='Your cake is here, Muskan! Tap the cake to cut it 🎂';
+ burst();
+}
+function cutCake(){
+ if(cakeStep===0){revealCake();return;}
+ if(cakeStep!==1)return;
+ cakeStep=2;
+ $('cakeArt').classList.add('cutting');
+ $('cakeHint').textContent='One little cut… ✨';
+ setTimeout(()=>{
+  $('cakeArt').classList.remove('cutting');
+  $('cakeArt').classList.add('cut');
+  $('cakeMessage').classList.add('show');
+  $('cakeHint').textContent='Make a wish, Muskan! 💖';
+  $('headline').textContent='HAPPY BIRTHDAY, MUSKAN! 🎉';
+  $('intro').textContent='This little celebration is just for you. Stay happy and keep growing! 🌷';
+  burst();
+ },850);
+}
+$('showCakeBtn').addEventListener('click',revealCake);
+$('cakeArt').addEventListener('click',cutCake);
+$('cakeArt').addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();cutCake();}});
+
+tick();setInterval(tick,1000);
+function burst(){
+ for(let i=0;i<28;i++){
+  const h=document.createElement('span');h.className='heart';h.textContent=['💖','✨','💕','🌸','💗','🎉'][i%6];
+  h.style.left=Math.random()*100+'vw';h.style.animationDelay=Math.random()*1.8+'s';h.style.fontSize=(16+Math.random()*23)+'px';document.body.appendChild(h);setTimeout(()=>h.remove(),9500);
+ }
+}
+$('revealBtn').addEventListener('click',()=>{location.hash='#letter';burst();});
+$('heartBtn').addEventListener('click',()=>{burst();const t=$('toast');t.textContent='A little sparkle, just for you, Muskan ✨💖';t.style.display='block';setTimeout(()=>t.style.display='none',3000);});
+let audioCtx=null,oscillators=[],musicOn=false,musicTimer=null;
+function startMusic(){
+ const AC=window.AudioContext||window.webkitAudioContext;
+ if(!AC){alert('This browser does not support generated music.');return}
+ audioCtx=new AC();musicOn=true;
+ const master=audioCtx.createGain();master.gain.value=.035;master.connect(audioCtx.destination);
+ const notes=[261.63,329.63,392.00,329.63,293.66,349.23,440.00,349.23];let idx=0;
+ function playNote(){
+  if(!musicOn||!audioCtx)return;
+  const osc=audioCtx.createOscillator(),gain=audioCtx.createGain();
+  osc.type='sine';osc.frequency.value=notes[idx%notes.length];gain.gain.setValueAtTime(.0001,audioCtx.currentTime);gain.gain.exponentialRampToValueAtTime(.7,audioCtx.currentTime+.08);gain.gain.exponentialRampToValueAtTime(.0001,audioCtx.currentTime+.55);
+  osc.connect(gain);gain.connect(master);osc.start();osc.stop(audioCtx.currentTime+.58);idx++;
+ }
+ playNote();musicTimer=setInterval(playNote,620);$('musicBtn').textContent='🔇 Stop gentle music';
+}
+function stopMusic(){musicOn=false;if(musicTimer)clearInterval(musicTimer);if(audioCtx){audioCtx.close();audioCtx=null}$('musicBtn').textContent='🎵 Play gentle music';}
+$('musicBtn').addEventListener('click',()=>musicOn?stopMusic():startMusic());
+</script>
+</body>
+</html>
